@@ -1,0 +1,65 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+section
+{
+	position: relative;
+	height: 100vh;
+	width:100%;
+	background: url("infinity.png");
+}
+#slider
+{
+	position: absolute;
+	z-index: 3;
+	top:90%;
+	left:50%;
+	transform: translateX(-50%);
+	width:400px;
+	height:25px;
+	-webkit-appearance:none;
+	background: rgba(225,225,225,.2);
+	border-radius: 15px;
+	outline: none;
+	border: none;
+	z-index: 3;
+	overflow:hidden;
+}
+#slider::-webkit-slider-thumb
+{
+	-webkit-appearance:none;
+	height: 25px;
+	width: 25px;
+	background: #32cd23;
+	border-radius: 50%;
+	border: 4px solid black;
+	box-shadow: -410px 0 0 400px rgba(225,225,225,.4);
+}
+#slidImg
+{
+	position: fixed;
+	top:0;
+	left:0;
+	height: 100vh;
+	width: 0;
+	background: url("endgame.png");
+	overflow: hidden;
+	pointer-events: none;
+	border-right: 6px solid black;
+}
+.text
+{
+	font-size: 20px;
+	position: relative;
+	z-index: 1;
+	top:90%;
+	left:50%;
+	transform: translateX(-50%);
+	width:400px;
+	height:25px;
+	text-align: center;
+	color:yellow;
+}
